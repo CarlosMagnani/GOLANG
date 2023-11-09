@@ -3,7 +3,6 @@ package main
 import (
 	"concorrencia/generator"
 	"fmt"
-	"time"
 )
 func main() {
 	
@@ -30,19 +29,4 @@ func multiplex(canalDeEntrada, canalDeEntrada2 <-chan string) <-chan string {
 	}()
 
 	return canalDeSaida
-}
-
-func escrever(texto string) <-chan string {
-	canal := make(chan string)
-
-	go func(){
-		//AQUI FAZEMOS UM LOOP PARA MANDAR AS MENSAGENS PARA O CANAL
-		for {
-			canal <- fmt.Sprintf("Valor recebido: %s", texto)
-			time.Sleep(time.Millisecond * 500)
-		}
-	}();
-
-	
-	return canal
 }
