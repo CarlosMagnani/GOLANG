@@ -1,4 +1,4 @@
-package main
+package multiplexador
 
 import (
 	"concorrencia/generator"
