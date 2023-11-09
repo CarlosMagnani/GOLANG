@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"modulo/auxiliar"
+	"modulos/auxiliar"
 )
 
 //This func write an message on screen

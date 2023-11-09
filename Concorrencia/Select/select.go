@@ -1,4 +1,4 @@
-package main
+package sele_test
 
 import (
 	"fmt"
