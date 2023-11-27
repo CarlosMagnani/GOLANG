@@ -5,7 +5,7 @@ import (
 	"teste/enderecos"
 )
 
-func main() {
+func teste() {
 	tipoEndereco := enderecos.TipoDeEndereco("Rua Cecilia de Assis silva")
 
 	fmt.Println(tipoEndereco)
